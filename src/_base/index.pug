@@ -1,0 +1,12 @@
+if layout_included
+  yield
+
+else
+  - var layout_included = true
+  doctype html
+  html
+    head
+      link(rel="stylesheet" href="/release/index.css")
+
+    body
+      yield

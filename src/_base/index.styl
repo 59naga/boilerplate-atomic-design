@@ -1,0 +1,36 @@
+@import 'kouto-swiss'
+@import 'sanitize.styl'
+@import 'typographic'
+@import 'jeet'
+@import 'rupture'
+
+/*! begin meyer-reset */
+meyer-reset()
+/*! begin box-sizing-reset */
+box-sizing-reset()
+/*! begin sanitize */
+sanitize()
+
+/*! begin typographic */
+$min-font = 14px
+typographic()
+
+/*! begin jeet */
+edit()
+// with rupture
++below(2)
+  section
+    center()
+  aside
+    col(1/3)
+  article
+    col(2/3)
++above(2)
+  section
+    center()
+  aside
+    col(1/2)
+  article
+    col(1/2)
+
+/*! begin your styles */

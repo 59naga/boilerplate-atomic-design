@@ -1,0 +1,43 @@
+{
+  "scripts": {
+    "start": "abby server:* \"build:* -- --watch\" --log",
+    "server:live": "live-server . --host=localhost --port=59798 --open=width-adjuster.html --quiet",
+    "build": "abby build:* --env",
+    "build:pug": "pug src --out release --obj pug.config.js",
+    "build:styl": "abby \"node --require reify stylus.config.js\""
+  },
+  "devDependencies": {
+    "abigail": "^1.9.0",
+    "autoprefixer-stylus": "^0.9.3",
+    "jeet": "^6.1.2",
+    "js-yaml": "^3.6.1",
+    "kouto-swiss": "^0.12.0",
+    "live-server": "^1.0.0",
+    "lodash.padstart": "^4.5.0",
+    "mkdirp": "^0.5.1",
+    "pug-cli": "^1.0.0-alpha6",
+    "reify": "^0.2.3",
+    "rupture": "^0.6.1",
+    "sanitize.styl": "^0.0.0",
+    "stylus": "^0.54.5",
+    "typographic": "^2.9.3",
+    "wait-on": "^1.5.2",
+    "xo": "^0.15.1"
+  },
+  "abigail": {
+    "plugins": {
+      "log": false,
+      "parse": {
+        "serial": false,
+        "require": "reify"
+      },
+      "watch": {
+        "value": "src/**/*.styl"
+      }
+    }
+  },
+  "xo": {
+    "space": 2,
+    "semicolon": false
+  }
+}

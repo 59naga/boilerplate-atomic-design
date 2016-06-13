@@ -1,0 +1,112 @@
+# quote by https://github.com/pattern-lab/patternlab-node#readme
+# this define for static link generation
+atoms:
+    meta:
+        - head
+        - foot
+    global:
+        - colors
+        - fonts
+        - animations
+        - visibility
+    text:
+        - headings
+        - subheadings
+        - headings-with-links
+        - paragraph
+        - blockquote
+        - inline-elements
+        - time
+        - preformatted-text
+        - emphasis-colors
+        - hr
+        - caption
+    lists:
+        - unordered
+        - ordered
+        - definition
+    images:
+        - logo
+        - landscape-4x3
+        - landscape-16x9
+        - square
+        - avatar
+        - icons
+        - loading-icon
+        - favicon
+    forms:
+        - text-fields
+        - select-menu
+        - checkbox
+        - radio-buttons
+        - html5-inputs
+    buttons:
+        - buttons
+    tables:
+        - table
+    media:
+        - video
+        - audio
+molecules:
+    text:
+        - byline-author-only
+        - byline-author-time
+        - address
+        - heading-group
+        - blockquote-with-citation
+        - intro-text
+        - pullquote
+    layout:
+        - one-up
+        - two-up
+        - three-up
+        - four-up
+    blocks:
+        - media-block
+        - headline-byline
+        - block-hero
+        - block-thumb-headline
+        - headline-only
+        - inset-block
+    media:
+        - figure-with-caption
+        - _map
+    forms:
+        - search
+        - comment-form
+        - newsletter
+    navigation:
+        - primary-nav
+        - footer-nav
+        - breadcrumbs
+        - pagination
+        - tabs
+    components:
+        - social-share
+        - accordion
+        - single-comment
+    messaging:
+        - alert
+organisms:
+    global:
+        - header
+        - footer
+    article:
+        - article-body
+    comments:
+        - comment-thread
+        - sticky-comment
+    components:
+        - carousel
+    sections:
+        - latest-posts
+        - recent-tweets
+        - related-posts
+templates:
+    - homepage
+    - blog
+    - article
+pages:
+    - homepage
+    - blog
+    - article

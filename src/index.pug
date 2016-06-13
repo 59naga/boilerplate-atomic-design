@@ -1,0 +1,25 @@
+include /_base/index
+  each group, prefix in ['atoms', 'molecules', 'organisms']
+    - var i = 0
+    
+    h2 #{group}
+    each children, category in atomicDesign[group]
+      if category === 'meta'
+        - i++
+        - continue
+      h3 #{category}
+      ul
+      each subcategory, j in children
+        li
+          - var uri = `${zeroPadding(prefix)}-${group}/${zeroPadding(i)}-${category}/${zeroPadding(j)}-${subcategory}.html`
+          a(href=uri) #{subcategory}
+
+      - i++
+  
+  each group, prefix in ['templates', 'pages']
+    h2 #{group}
+    ul
+    each category, i in atomicDesign[group]
+      li
+        - var uri = `${zeroPadding(prefix+3)}-${group}/${zeroPadding(i)}-${category}.html`
+        a(href=uri) #{category}
